@@ -45,4 +45,25 @@ void main() {
   for (int i = 0; i < paises.length; i++) {
     print(paises.elementAt(i));
   }
+
+  //DICCIONARIOS <- CLAVE , VALOR
+  /**Map <tipo_Dato_llave, tipo_Dato_valor> nombre_variable = {llave:valor...} */
+  Map<String, dynamic> persona = {
+    "nombre": "Juan",
+    "edad": 26,
+    "pais": "Colombia",
+    "altura": 1.95,
+  };
+
+  print(persona);
+  print(persona.keys);
+  print(persona.values);
+  print(persona['nombre']);
+  print(persona['apellido']);
+
+  if (persona['apellido'] == null) {
+    print("Atributo apellido no definido");
+  } else {
+    print(persona['apellido']);
+  }
 }
