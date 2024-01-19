@@ -1,4 +1,7 @@
 void main() {
-  const myName = "Segundo Paladines";
-  print("Hola, mi nombre es ${myName}");
+  print("Hola, mi nombre es ${nombre()}");
+}
+
+String nombre() {
+  return "Segundo Paladines";
 }
